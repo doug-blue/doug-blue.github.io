@@ -305,7 +305,7 @@ kbd {
 }
 
 * {
-  -webkit-print-color-adjust: exact;
+	-webkit-print-color-adjust: exact;
 }
 @media screen and (min-width: 914px) {
     body {
@@ -314,12 +314,12 @@ kbd {
     }
 }
 @media print {
-  table, pre {
-    page-break-inside: avoid;
-  }
-  pre {
-    word-wrap: break-word;
-  }
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
   body {
     padding: 2cm; 
   }
@@ -335,16 +335,16 @@ kbd {
 
 <p>dwb44[at]pitt.edu</p>
 
-<p>I’m an assistant professor of philosophy at the University of Pittsburgh with research interests in the foundations of set theory and the history of analytic philosophy.</p>
+<p>I’m an assistant professor of philosophy at the University of Pittsburgh interested in the foundations of set theory and the history of analytic philosophy.</p>
 
-<h2 id="toc_1">Papers</h2>
+<h3 id="toc_1">Papers</h3>
 
 <ul>
 <li><p>(with Grigor Sargsyan) AD\({}^+\) implies \(\omega_1\) is a club \(\Theta\)-Berkeley cardinal. <a href="https://doi.org/10.48550/arXiv.2402.01329">preprint</a></p></li>
 <li><p>What is it to be a solution to Cantor&#39;s Continuum Problem? <em>The Journal of Philosophy</em>. Forthcoming.</p></li>
 <li><p>Infinite inference and mathematical conventionalism. <em>Philosophy and Phenomenological Research</em>. <a href="https://doi.org/10.1111/phpr.13084">doi</a></p></li>
 <li><p>(with Juan Aguilera) Provably \(\Delta_1\) games. <em>Journal of Symbolic Logic</em>, 85(3), 1124-1146. <a href="https://doi.org/10.1017/jsl.2020.71">doi</a></p></li>
-<li><p><em>Models of the axiom of determinacy and the foundations of set theory</em>. PhD thesis, Harvard University, 2023. <a href="https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37375720">link</a></p></li>
+<li><p><em>Models of the axiom of determinacy and the foundations of set theory</em>. PhD thesis, Harvard University, 2023. <a href="https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37375720">doi</a></p></li>
 </ul>
 
 
@@ -353,14 +353,14 @@ kbd {
 (function () {
 
 MathJax.Hub.Config({
-  'showProcessingMessages': false,
-  'messageStyle': 'none'
+	'showProcessingMessages': false,
+	'messageStyle': 'none'
 });
 
 if (typeof MathJaxListener !== 'undefined') {
-  MathJax.Hub.Register.StartupHook('End', function () {
-    MathJaxListener.invokeCallbackForKey_('End');
-  });
+	MathJax.Hub.Register.StartupHook('End', function () {
+		MathJaxListener.invokeCallbackForKey_('End');
+	});
 }
 
 })();

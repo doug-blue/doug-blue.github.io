@@ -5,7 +5,7 @@ dwb44[at]pitt.edu
 I’m an assistant professor of philosophy at the University of Pittsburgh interested in the foundations of set theory and the history of analytic philosophy.
 
 
-## Papers
+### Papers
 
 
 * (with Grigor Sargsyan) AD${}^+$ implies $\omega_1$ is a club $\Theta$-Berkeley cardinal. [preprint](https://doi.org/10.48550/arXiv.2402.01329)
