@@ -14,7 +14,7 @@ I’m an assistant professor of philosophy at the University of Pittsburgh inter
 
 * Infinite inference and mathematical conventionalism. _Philosophy and Phenomenological Research_. [doi](https://doi.org/10.1111/phpr.13084)
 
-* The generic multiverse is not going away. _The Review of Symbolic Logic_. Forthcoming.
+* The generic multiverse is not going away. _The Review of Symbolic Logic_. [doi](https://doi.org/10.1017/S1755020324000297)
 
 * (with Juan Aguilera) Provably $\Delta_1$ games. _Journal of Symbolic Logic_, 85(3), 1124-1146. [doi](https://doi.org/10.1017/jsl.2020.71)
 
