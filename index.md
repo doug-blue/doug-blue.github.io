@@ -10,7 +10,7 @@ I’m an assistant professor of philosophy at the University of Pittsburgh inter
 
 * (with Grigor Sargsyan) AD${}^+$ implies $\omega_1$ is a club $\Theta$-Berkeley cardinal. [preprint](https://doi.org/10.48550/arXiv.2402.01329)
 
-* What is it to be a solution to Cantor's Continuum Problem? _The Journal of Philosophy_. Forthcoming. 
+* What is it to be a solution to Cantor's Continuum Problem? _The Journal of Philosophy_. Forthcoming. [preprint](https://philsci-archive.pitt.edu/24666/)
 
 * Infinite inference and mathematical conventionalism. _Philosophy and Phenomenological Research_. [doi](https://doi.org/10.1111/phpr.13084)
 
