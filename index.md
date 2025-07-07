@@ -1,14 +1,16 @@
 # Douglas Blue
 
-dwb44[at]pitt.edu
+doug.blue[at]pitt.edu
 
 I’m an assistant professor of philosophy at the University of Pittsburgh interested in logic, set theory, and the history of analytic philosophy.
 
 
 ### Papers
+
+
 * (with Paul Larson and Grigor Sargsyan) Nairian models. [preprint](https://doi.org/10.48550/arXiv.2501.18958)
 
-* (with Grigor Sargsyan) AD${}^+$ implies $\omega_1$ is a club $\Theta$-Berkeley cardinal. [preprint](https://doi.org/10.48550/arXiv.2402.01329)
+* (with Grigor Sargsyan) AD${}^+$ implies $\omega_1$ is a club $\Theta$-Berkeley cardinal. Accepted in _Forum of Mathematics, Sigma_. [preprint](https://doi.org/10.48550/arXiv.2402.01329)
 
 * What is it to be a solution to Cantor's Continuum Problem? _The Journal of Philosophy_. Forthcoming. [preprint](https://philsci-archive.pitt.edu/24666/)
 
