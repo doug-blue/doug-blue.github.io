@@ -20,3 +20,7 @@ I’m an assistant professor of philosophy at the University of Pittsburgh inter
 * (with Juan Aguilera) Provably $\Delta_1$ games. _Journal of Symbolic Logic_. [doi](https://doi.org/10.1017/jsl.2020.71)
 
 * _Models of the axiom of determinacy and the foundations of set theory_. PhD thesis, Harvard University, 2023. [doi](https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37375720)
+
+
+### Talks
+* [Luminy 2025](talks/Luminy_2025.pdf)
