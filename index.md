@@ -2,7 +2,7 @@
 
 doug.blue[at]pitt.edu
 
-I’m an assistant professor of philosophy at the University of Pittsburgh interested in logic, set theory, and the history of analytic philosophy.
+I’m an assistant professor of philosophy at the University of Pittsburgh interested in logic, set theory, and the development of analytic philosophy.
 
 
 ### Papers
@@ -23,4 +23,4 @@ I’m an assistant professor of philosophy at the University of Pittsburgh inter
 
 
 ### Talks
-* [Luminy 2025](talks/Luminy_2025.pdf)
+Nairian models and forcing axioms, Luminy Set Theory Workshop 2025. [slides](talks/Luminy_2025.pdf)
