@@ -4,6 +4,8 @@ doug.blue[at]pitt.edu
 
 I’m an assistant professor of philosophy at the University of Pittsburgh interested in logic, set theory (determinacy, large cardinals, inner models, new axioms) and the development of analytic philosophy.
 
+* [Seminar: Contentualness and formalism](seminars/ContentualnessFormalism.html)
+
 * [Seminar: Provability logic](seminars/ProvabilityLogicSp26.html)
 
 
