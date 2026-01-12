@@ -11,6 +11,8 @@ I’m an assistant professor of philosophy at the University of Pittsburgh inter
 
 ### Papers
 
+* Can philosophy do anything for set theory? _Journal of Philosophical Logic_. Forthcoming.
+
 * (with Paul Larson and Grigor Sargsyan) Nairian models. [preprint](https://doi.org/10.48550/arXiv.2501.18958)
 
 * (with Grigor Sargsyan) AD${}^+$ implies $\omega_1$ is a club $\Theta$-Berkeley cardinal. _Forum of Mathematics, Sigma_. [doi](https://doi.org/10.1017/fms.2025.10082)
