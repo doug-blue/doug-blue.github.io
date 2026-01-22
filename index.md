@@ -4,6 +4,8 @@ doug.blue[at]pitt.edu
 
 I’m an assistant professor of philosophy at the University of Pittsburgh interested in logic, set theory (determinacy, large cardinals, inner models, new axioms) and the development of analytic philosophy.
 
+* [CMU Core model theory seminar lectures on the consistency strength of total failure of square](seminars/CoreModelsp26.html)
+
 * [Seminar: Contentualness and formalism](seminars/ContentualnessFormalism.html)
 
 * [Seminar: Provability logic](seminars/ProvabilityLogicSp26.html)
@@ -11,7 +13,7 @@ I’m an assistant professor of philosophy at the University of Pittsburgh inter
 
 ### Papers
 
-* Can philosophy do anything for set theory? _Journal of Philosophical Logic_. Forthcoming.
+* Can philosophy do anything for set theory? _Journal of Philosophical Logic_. Accepted.
 
 * (with Paul Larson and Grigor Sargsyan) Nairian models. [preprint](https://doi.org/10.48550/arXiv.2501.18958)
 

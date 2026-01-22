@@ -1,6 +1,6 @@
 # CMU Core Model Seminar (Spring 2026)
 
-**Meetings:** Wednesdays 4-6pm in Wean 8220
+**Meetings:** Wednesdays 4:20-6pm in Wean 8220
 
 
 ###Description
@@ -8,7 +8,7 @@ For 40 years or more, the large cardinal consistency strength of various failure
 
 
 ### Meeting 1 (January 21)
-* Woodin's proof that $N\models\mathrm{ZF}$
+* Introduction & roadmap
 
 
 ###References
