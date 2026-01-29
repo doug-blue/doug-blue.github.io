@@ -10,6 +10,8 @@ For 40 years or more, the large cardinal consistency strength of various failure
 ### Meeting 1 (January 21)
 * Introduction & roadmap
 
+### Meeting 2 (January 28)
+* Nairian models
 
 ###References
 1. Blue, Larson, Sargsyan, Nairian models.
