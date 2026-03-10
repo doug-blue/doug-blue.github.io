@@ -11,15 +11,41 @@ I’m an assistant professor of philosophy at the University of Pittsburgh inter
 
 ### Papers
 
-* (with Grigor Sargsyan and Nam Trang) Infinitely many consecutive measurable cardinals and a new Gitik model. In preparation.
+<details>
+  <summary>
+  (with Paul Larson and Grigor Sargsyan) The failure of square at all uncountable cardinals is weaker than a Woodin limit of Woodin cardinals. [preprint](https://arxiv.org/abs/2602.13077)
+  </summary>
+  <p>
+    Abstract.
+  </p>
+</details>
 
-* (with Paul Larson and Grigor Sargsyan) The failure of square at all uncountable cardinals is weaker than a Woodin limit of Woodin cardinals. [preprint](https://arxiv.org/abs/2602.13077)
+<details>
+  <summary>
+  Can philosophy do anything for set theory? _Journal of Philosophical Logic_. Accepted.
+  </summary>
+  <p>
+    Abstract.
+  </p>
+</details>
 
-* Can philosophy do anything for set theory? _Journal of Philosophical Logic_. Accepted.
+<details>
+  <summary>
+  (with Paul Larson and Grigor Sargsyan) Nairian models. [preprint](https://doi.org/10.48550/arXiv.2501.18958)
+  </summary>
+  <p>
+    Abstract
+  </p>
+</details>
 
-* (with Paul Larson and Grigor Sargsyan) Nairian models. [preprint](https://doi.org/10.48550/arXiv.2501.18958)
-
-* (with Grigor Sargsyan) AD${}^+$ implies $\omega_1$ is a club $\Theta$-Berkeley cardinal. _Forum of Mathematics, Sigma_. [doi](https://doi.org/10.1017/fms.2025.10082)
+<details>
+  <summary>
+  (with Grigor Sargsyan) AD${}^+$ implies $\omega_1$ is a club $\Theta$-Berkeley cardinal. _Forum of Mathematics, Sigma_. [doi](https://doi.org/10.1017/fms.2025.10082)
+  </summary>
+  <p>
+    Abstract
+  </p>
+</details>
 
 * What is it to be a solution to Cantor's Continuum Problem? _The Journal of Philosophy_. Forthcoming. [preprint](https://philsci-archive.pitt.edu/24666/)
 
