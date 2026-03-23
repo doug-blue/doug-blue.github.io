@@ -15,7 +15,7 @@ I’m an assistant professor of philosophy at the University of Pittsburgh inter
 
 * (with Paul Larson and Grigor Sargsyan) The failure of square at all uncountable cardinals is weaker than a Woodin limit of Woodin cardinals. [preprint](https://arxiv.org/abs/2602.13077)
 
-* Can philosophy do anything for set theory? _Journal of Philosophical Logic_. Accepted.
+* Can philosophy do anything for set theory? _Journal of Philosophical Logic_. [doi](https://doi.org/10.1007/s10992-026-09829-7)
 
 * (with Paul Larson and Grigor Sargsyan) Nairian models. [preprint](https://doi.org/10.48550/arXiv.2501.18958)
 
