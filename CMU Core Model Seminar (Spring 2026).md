@@ -7,11 +7,6 @@
 For 40 years or more, the large cardinal consistency strength of various failures of Jensen's square principles had been conjectured to be in the neighborhood of a supercompact cardinal.  Recently, Blue, Larson and Sargsyan made the surprising discovery that the consistency strength of these principles had been vastly overestimated.  Their new upper bounds are somewhat less than the existence of a Woodin cardinal that is a limit of Woodin cardinals.  There are many components to their proofs, including large cardinals, inner models, derived models of determinacy, the HOD analysis and $\mathbb{P}_{\mathrm{max}}$ forcing.  The various components will be introduced and their essence discussed before they are used in the proofs of the main theorems.
 
 
-### Meeting 1 (January 21)
-* Introduction & roadmap
-
-### Meeting 2 (January 28)
-* Nairian models
 
 ###References
 1. Blue, Larson, Sargsyan, Nairian models.
