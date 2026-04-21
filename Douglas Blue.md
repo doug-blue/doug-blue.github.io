@@ -4,9 +4,7 @@ doug.blue[at]pitt.edu
 
 I’m an assistant professor of philosophy at the University of Pittsburgh interested in logic, set theory (determinacy, large cardinals, inner models, new axioms) and the development of analytic philosophy.
 
-* [CMU Core model theory seminar lectures on the consistency strength of total failure of square](seminars/CoreModelsp26.html)
 
-* [Seminar: Contentualness and formalism](seminars/ContentualnessFormalism.html)
 
 
 ### Papers
@@ -34,4 +32,10 @@ I’m an assistant professor of philosophy at the University of Pittsburgh inter
 
 
 ### Talks
-Nairian models and forcing axioms, Luminy Set Theory Workshop 2025. [slides](talks/Luminy_2025.pdf)
+* Nairian models and forcing axioms, Luminy Set Theory Workshop 2025. [slides](talks/Luminy_2025.pdf)
+
+
+### Seminars
+* [CMU Core model theory seminar lectures on the consistency strength of total failure of square (Spring 2026)](seminars/CoreModelsp26.html)
+
+* [Contentualness and formalism (Spring 2026)](seminars/ContentualnessFormalism.html)
