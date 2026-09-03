@@ -1,0 +1,45 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  max-width: 650px;
+  margin: 4rem auto;
+  padding: 0 1.25rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.55;
+  color: #222;
+}
+
+h1 {
+  font-size: 1.7rem;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-size: 1.05rem;
+  margin-top: 2.75rem;
+  margin-bottom: 1.25rem;
+}
+
+p {
+  margin: 0.45rem 0;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
