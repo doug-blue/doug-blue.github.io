@@ -15,6 +15,7 @@ I'm interested in set theory and the history of analytic philosophy.
 
 ## Papers
 
+::: papers
 
 [*The failure of square at all uncountable cardinals is weaker than a Woodin limit of Woodin cardinals*](https://arxiv.org/abs/2602.13077)  
 with Paul Larson and Grigor Sargsyan. Preprint.
@@ -43,14 +44,16 @@ with Juan Aguilera. *Journal of Symbolic Logic.*
 [*Models of the axiom of determinacy and the foundations of set theory*](https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37375720)  
 PhD thesis, Harvard University, 2023.
 
+:::
+
 ## Other
 
 
-[CMU Core Model Theory Seminar](LINK)  
+[CMU Core Model Theory Seminar](seminars/CoreModelSp26.html)  
 Seminar on the consistency strength of total failure of square, Spring 2026.
 
-[Contentualness and Formalism](LINK)  
+[Contentualness and Formalism](seminars/ContentualnessFormalism.html)  
 Spring 2026 seminar.
 
-[*Nairian models and forcing axioms*](LINK)  
+[*Nairian models and forcing axioms*](talks/Luminy_2025.pdf)  
 Luminy Set Theory Workshop, 2025.

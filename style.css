@@ -43,3 +43,7 @@ a {
 a:hover {
   text-decoration-thickness: 2px;
 }
+
+.papers p {
+  margin-bottom: 1.15rem;
+}
