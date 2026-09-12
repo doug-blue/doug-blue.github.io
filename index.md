@@ -12,7 +12,7 @@ doug.blue[at]pitt.edu
 
 I'm interested in set theory and the history of analytic philosophy.
 
-[Workshop on Foundations of Mathematics, February 27-28, 2027](https://www.centerphilsci.pitt.edu/event/workshop-on-the-foundations-of-mathematics/)
+[Workshop on Foundations of Mathematics at the Center for Philosophy of Science, February 27-28, 2027](https://www.centerphilsci.pitt.edu/event/workshop-on-the-foundations-of-mathematics/)
 
 
 ## Papers
