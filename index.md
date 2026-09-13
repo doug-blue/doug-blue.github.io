@@ -19,6 +19,9 @@ I'm interested in set theory and the history of analytic philosophy.
 
 ::: papers
 
+*Axiom acceleration*
+forthcoming in *Journal for the Philosophy of Mathematics.*
+
 [*The failure of square at all uncountable cardinals is weaker than a Woodin limit of Woodin cardinals*](https://arxiv.org/abs/2602.13077)  
 with Paul Larson and Grigor Sargsyan. Preprint.
 
