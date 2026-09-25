@@ -9,7 +9,7 @@ For 40 years or more, the large cardinal consistency strength of various failure
 
 
 
-### References
+## References
 
 1. Blue, Larson, Sargsyan, Nairian models.
 2. Blue, Larson, Sargsyan, Failure of square at all uncountable cardinals is weaker than a Woodin limit of Woodin cardinals.
