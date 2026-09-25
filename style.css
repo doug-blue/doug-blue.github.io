@@ -47,3 +47,37 @@ a:hover {
 .papers p {
   margin-bottom: 1.15rem;
 }
+
+body.longform h1 {
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+body.longform h2 {
+  font-size: 1.25rem;
+  margin: 2.5rem 0 0.75rem;
+}
+
+body.longform h3 {
+  font-size: 1rem;
+  margin: 1.75rem 0 0.4rem;
+}
+
+body.longform p {
+  margin: 0 0 1rem;
+}
+
+body.longform li {
+  margin-bottom: 0.35rem;
+}
+
+@media (max-width: 600px) {
+  body.longform {
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  body.longform h1 {
+    font-size: 1.45rem;
+  }
+}

@@ -1,40 +1,201 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title></title>
-
-  <link rel="stylesheet" href="/style.css">
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.11" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>CoreModelsp26</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
 </head>
-
-<body>
-  <main>
-    <h1 id="cmu-core-model-seminar-spring-2026">CMU Core Model Seminar
-    (Spring 2026)</h1>
-    <p><strong>Meetings:</strong> Wednesdays 4:20-6pm in Wean 8220</p>
-    <p>###Description For 40 years or more, the large cardinal
-    consistency strength of various failures of Jensen’s square
-    principles had been conjectured to be in the neighborhood of a
-    supercompact cardinal. Recently, Blue, Larson and Sargsyan made the
-    surprising discovery that the consistency strength of these
-    principles had been vastly overestimated. Their new upper bounds are
-    somewhat less than the existence of a Woodin cardinal that is a
-    limit of Woodin cardinals. There are many components to their
-    proofs, including large cardinals, inner models, derived models of
-    determinacy, the HOD analysis and
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="double-struck">ℙ</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">x</mi></mrow></msub><annotation encoding="application/x-tex">\mathbb{P}_{\mathrm{max}}</annotation></semantics></math>
-    forcing. The various components will be introduced and their essence
-    discussed before they are used in the proofs of the main
-    theorems.</p>
-    <p>###References 1. Blue, Larson, Sargsyan, Nairian models. 2. Blue,
-    Larson, Sargsyan, Failure of square at all uncountable cardinals is
-    weaker than a Woodin limit of Woodin cardinals. 1. Larson,
-    <em>Extensions of the Axiom of Determinacy</em>. 2. Larson, Forcing
-    over models of determinacy. In <em>Handbook of Set Theory</em>. 3.
-    Steel, <em>A comparison process for mouse pairs.</em> 4. Steel,
-    Mouse pairs and Suslin cardinals.</p>
-  </main>
+<body class="longform">
+<h1 id="cmu-core-model-seminar-spring-2026">CMU Core Model Seminar
+(Spring 2026)</h1>
+<p><strong>Meetings:</strong> Wednesdays 4:20-6pm in Wean 8220</p>
+<h2 id="description">Description</h2>
+<p>For 40 years or more, the large cardinal consistency strength of
+various failures of Jensen’s square principles had been conjectured to
+be in the neighborhood of a supercompact cardinal. Recently, Blue,
+Larson and Sargsyan made the surprising discovery that the consistency
+strength of these principles had been vastly overestimated. Their new
+upper bounds are somewhat less than the existence of a Woodin cardinal
+that is a limit of Woodin cardinals. There are many components to their
+proofs, including large cardinals, inner models, derived models of
+determinacy, the HOD analysis and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="double-struck">ℙ</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">x</mi></mrow></msub><annotation encoding="application/x-tex">\mathbb{P}_{\mathrm{max}}</annotation></semantics></math>
+forcing. The various components will be introduced and their essence
+discussed before they are used in the proofs of the main theorems.</p>
+<p>###References 1. Blue, Larson, Sargsyan, Nairian models. 2. Blue,
+Larson, Sargsyan, Failure of square at all uncountable cardinals is
+weaker than a Woodin limit of Woodin cardinals. 1. Larson,
+<em>Extensions of the Axiom of Determinacy</em>. 2. Larson, Forcing over
+models of determinacy. In <em>Handbook of Set Theory</em>. 3. Steel,
+<em>A comparison process for mouse pairs.</em> 4. Steel, Mouse pairs and
+Suslin cardinals.</p>
 </body>
 </html>

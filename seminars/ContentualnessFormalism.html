@@ -1,342 +1,494 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title></title>
-
-  <link rel="stylesheet" href="/style.css">
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.11" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ContentualnessFormalism</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
 </head>
-
-<body>
-  <main>
-    <h1 id="phil-2505-contentualness-formalism-spring-2026">PHIL 2505
-    Contentualness &amp; Formalism (Spring 2026)</h1>
-    <p><strong>Instructor:</strong> Doug Blue</p>
-    <p><strong>Email:</strong> doug.blue[at]pitt.edu</p>
-    <p><strong>Meetings:</strong> Tuesdays 10am-12:30pm in CL 1008B</p>
-    <p><strong>Zoom link:</strong> Email me</p>
-    <p>###Description David Hilbert once described “the question of
-    relations between contentualness (<em>Inhaltlichkeit</em>) and
-    formalism in mathematics and logic” as among the most difficult
-    epistemological problems with scientific significance. This seminar
-    will take up that question directly.</p>
-    <p>Our central text will be Juliette Kennedy’s <em>Gödel, Tarski and
-    the Lure of Natural Language: Logical Entanglement, Formalism
-    Freeness</em>, through which we will explore the epistemological
-    advantages of formalization in mathematics and the phenomenon of
-    “formalism freeness.” Along the way, we will consider questions such
-    as:</p>
-    <ul>
-    <li>How does formalization contribute to knowledge acquisition?</li>
-    <li>What is the meaning of mathematical language?</li>
-    <li>What counts as a natural formal theory?</li>
-    <li>To what extent are formal systems adequate models of
-    mathematical practice?</li>
-    </ul>
-    <p>We will reflect on the broader implications of these issues for
-    the philosophy of mathematical practice, traditional philosophy of
-    mathematics, and linguistic philosophy, both ideal and ordinary.</p>
-    <h3 id="course-structure">Course structure</h3>
-    <p>The course will consist of four units.</p>
-    <ol type="1">
-    <li>Rigor</li>
-    <li>The relation of mathematical logic to mathematics</li>
-    <li>Intension and interpretation</li>
-    <li>Formalism freeness</li>
-    </ol>
-    <h3 id="requirements">Requirements</h3>
-    <p>Auditors and participants taking the course for credit may be
-    asked to present material.</p>
-    <p>Participants taking the course for credit are expected to write a
-    term paper.</p>
-    <h3 id="introduction">1/13 Introduction</h3>
-    <p>Background reading:</p>
-    <ul>
-    <li>Burgess, <em>Rigor and Structure</em>, chapters 1 &amp; 2</li>
-    <li>Avigad, Mathematics and the formal turn</li>
-    </ul>
-    <h3 id="proof">1/20 Proof</h3>
-    <p>Reading:</p>
-    <ul>
-    <li>Rav, Why do we prove theorems?</li>
-    <li>Azzouni, Why do informal proofs conform to formal norms?</li>
-    <li>Azzouni, The derivation-indicator view of mathematical
-    practice.</li>
-    <li>Rav, A critique of a formalist-mechanist version of the
-    justification of arguments in mathematicians’ proof practices.</li>
-    </ul>
-    <h3 id="proof-1">1/27 Proof</h3>
-    <p>Reading:</p>
-    <ul>
-    <li>Tanswell, A problem with the dependence of informal proofs on
-    formal proofs.</li>
-    <li>Azzouni, The algorithmic-device view of informal rigorous
-    mathematical proof.</li>
-    </ul>
-    <h3 id="virtues-of-informal-proof">2/3 Virtues of informal
-    proof</h3>
-    <p>Reading:</p>
-    <ul>
-    <li>Dawson, Why do mathematicians reprove theorems?</li>
-    <li>Hersh, Some proposals for reviving the philosophy of
-    mathematics.</li>
-    <li>Jaffe and Quinn, <a
-    href="https://www.ams.org/journals/bull/1993-29-01/S0273-0979-1993-00413-0/S0273-0979-1993-00413-0.pdf">“Theoretical
-    mathematics”: Toward a cultural synthesis of mathematics and
-    theoretical physics</a>.</li>
-    <li>Thurston, On proof and progress in mathematics.</li>
-    </ul>
-    <h3 id="logic-and-natural-language">2/10 Logic and natural
-    language</h3>
-    <p>Reading:</p>
-    <ul>
-    <li>Glanzberg, <a
-    href="https://michaelglanzberg.org/wp-content/uploads/2018/06/ConsequenceLanguage-29ykrxa-1.pdf">Logical
-    consequence and natural language</a></li>
-    <li>Glanzberg, <a
-    href="https://michaelglanzberg.org/wp-content/uploads/2019/08/ModelsmodelingFinal.pdf">Models,
-    model theory, and modeling</a></li>
-    <li>Sagi, <a
-    href="https://ee3bf591-9e37-4c8e-b89f-d8bf68bc1f92.filesusr.com/ugd/ec6525_3cc11f971ba147a39a559badb54b8567.pdf">Considerations
-    on logical consequence and natural language</a></li>
-    <li>Sagi, <a
-    href="https://link.springer.com/article/10.1007/s11098-024-02120-y">Logicality
-    in natural language</a>.</li>
-    </ul>
-    <h3 id="logic-as-modeling">2/17 Logic as modeling</h3>
-    <p>Reading:</p>
-    <ul>
-    <li>Cook, <em>Logic-as-modeling: a new perspective on
-    formalization</em>, PhD thesis.</li>
-    <li>Cook, Vagueness and mathematical precision.</li>
-    </ul>
-    <h3 id="the-question-of-logic">2/24 The question of logic</h3>
-    <p>Speaker: Seoyeon Park</p>
-    <p>Reading:</p>
-    <ul>
-    <li>Kripke, The question of logic.</li>
-    <li>Williamson, Accepting a logic, accepting a theory.</li>
-    </ul>
-    <h3 id="kreisel">3/3 Kreisel</h3>
-    <p>Reading:</p>
-    <ul>
-    <li>Kreisel, Mathematical logic: what has it done for the philosophy
-    of mathematics?</li>
-    <li>Kreisel, Mathematical logic: Tool and object lesson for
-    science</li>
-    </ul>
-    <h3 id="spring-break">3/10 Spring break</h3>
-    <h3 id="no-meeting">3/17 No meeting</h3>
-    <h3 id="informal-rigor">3/24 Informal rigor</h3>
-    <p>Reading:</p>
-    <ul>
-    <li>Kreisel, Informal rigour and completeness proofs</li>
-    <li>Kreisel, <a
-    href="https://projecteuclid.org/journals/notre-dame-journal-of-formal-logic/volume-28/issue-4/Churchs-thesis-and-the-ideal-of-informal-rigour/10.1305/ndjfl/1093637646.pdf">Church’s
-    thesis and the ideal of informal rigour</a></li>
-    </ul>
-    <p>Deep dive:</p>
-    <ul>
-    <li>Dean and Kurokawa, <a href="https://arxiv.org/pdf/2104.14887">On
-    the methodology of informal rigour: set theory, semantics, and
-    intuitionism</a></li>
-    </ul>
-    <h3 id="formalism-freeness">3/31 Formalism Freeness</h3>
-    <ul>
-    <li>Kennedy, <em>Gödel, Tarski and the Lure of Natural Language:
-    Logical Entanglement, Formalism Freeness</em>, chapters 1 &amp;
-    2</li>
-    </ul>
-    <p>Recommended:</p>
-    <ul>
-    <li>Baldwin, <em>Model Theory and the Philosophy of Mathematical
-    Practice</em>, Part I &amp; chapter 14</li>
-    </ul>
-    <h3 id="formalism-freeness-1">4/7 Formalism Freeness</h3>
-    <p>Speakers: Stephen Perry and Philip Sink</p>
-    <ul>
-    <li>Kennedy, <em>Gödel, Tarski and the Lure of Natural Language:
-    Logical Entanglement, Formalism Freeness</em>, chapters 3 &amp;
-    4</li>
-    </ul>
-    <h3 id="juliette-kennedy">4/14 Juliette Kennedy</h3>
-    <ul>
-    <li>Kennedy, <em>Gödel, Tarski and the Lure of Natural Language:
-    Logical Entanglement, Formalism Freeness</em>, chapters 5-7</li>
-    </ul>
-    <p>Recommended:</p>
-    <ul>
-    <li>Baldwin, <em>Model Theory and the Philosophy of Mathematical
-    Practice</em>, Part II</li>
-    </ul>
-    <h3 id="gil-sagi">4/21 Gil Sagi</h3>
-    <p>Recommended:</p>
-    <ul>
-    <li>Cohnitz &amp; Nicolai, “How to adopt a logic” (dialectica
-    2021)</li>
-    <li>Birman, “The adoption problem and the epistemology of logic”
-    (Mind 2024)</li>
-    <li>Devitt and Roberts, “Changing our logic: a Quinean perspective”
-    (Mind 2024)</li>
-    <li>Besson, “Knowledge of generality and the possibility of
-    deductive inference” (Inference and Consciousness, eds: Timothy Chan
-    and Anders Nes, 2019).</li>
-    </ul>
-    <p>Gil solved philosophy. It was <em>crazy</em>.</p>
-    <h1 id="references">References</h1>
-    <p>Unfinished.</p>
-    <h3 id="books">Books</h3>
-    <ul>
-    <li>Baldwin, <em>Model Theory and the Philosophy of Mathematical
-    Practice</em>.</li>
-    <li>Burgess, <a
-    href="https://www.princeton.edu/~jburgess/Rigor&amp;Structure.pdf"><em>Rigor
-    and Structure</em>.</a></li>
-    <li>Kennedy, <em>Gödel, Tarski and the Lure of Natural Language:
-    Logical Entanglement, Formalism Freeness</em>.</li>
-    <li>Rorty (editor), <em>The Linguistic Turn: Essays in Philosophical
-    Method</em>.</li>
-    </ul>
-    <h3 id="hilbert-and-the-contentual">Hilbert and the contentual</h3>
-    <ul>
-    <li>Blanchette, <a
-    href="https://plato.stanford.edu/entries/frege-hilbert/">The
-    Frege-Hilbert controversy.</a></li>
-    <li>Hilbert, On the infinite.</li>
-    <li>Hilbert, Axiomatic thinking.</li>
-    <li>Mancosu, <em>From Brouwer to Hilbert. The Debate on the
-    Foundations of Mathematics in the 1920s</em>.</li>
-    </ul>
-    <h3 id="rigor">Rigor</h3>
-    <ul>
-    <li>Avigad, Understanding proofs.</li>
-    <li>Avigad, Understanding, formal verification, and the philosophy
-    of mathematics.</li>
-    <li>Avigad, The mechanization of mathematics.</li>
-    <li>Avigad, <a
-    href="https://philsci-archive.pitt.edu/16283/1/reliability.pdf">Relibability
-    of mathematical inference.</a></li>
-    <li>Avigad, <a href="https://arxiv.org/pdf/2311.00007">Mathematics
-    and the formal turn</a>.</li>
-    <li>Azzouni, How and why mathematics is unique as social
-    practice.</li>
-    <li>Azzouni, Why do informal proofs conform to formal norms?</li>
-    <li>Azzouni, Does reason evolve? (Does the reasoning in mathematics
-    evolve?)</li>
-    <li>Azzouni, The algorithmic-device view of informal rigorous
-    mathematical proof.</li>
-    <li>Burgess &amp; De Toffoli, What is mathematical rigor?</li>
-    <li>De Toffoli, Reconciling rigor and intuition.</li>
-    <li>De Toffoli, Proofs for a price: Tomorrow’s ultra-rigorous
-    mathematical culture.</li>
-    <li>Feferman, And so on…: Reasoning with infinite diagrams.</li>
-    <li>Granville, Proof in the time of machine.</li>
-    <li>Hamami, Mathematical rigor and proof.</li>
-    <li>Harris, <a
-    href="https://www.ams.org/journals/bull/2024-61-02/S0273-0979-2024-01825-4/S0273-0979-2024-01825-4.pdf">Automation
-    compels mathematicians to reflect on our values</a>.</li>
-    <li>Larvor, How to think about informal proofs.</li>
-    <li>Larvor, Why the naive derivation recipe model cannot explain how
-    mathematicians’ proofs secure mathematical knowledge.</li>
-    <li>Paseau, What’s the point of complete rigour?</li>
-    <li>Pelc, <a href="https://arxiv.org/pdf/1411.4857">Why do we
-    believe theorems?</a></li>
-    <li>Rav, Why do we prove theorems?</li>
-    <li>Rav, A critique of a formalist-mechanist version of the
-    justification of arguments in mathematicians’ proof practices.</li>
-    <li>Tanswell, A problem with the dependence of informal proofs on
-    formal proofs.</li>
-    <li>Tanswell, <em>Mathematical Rigour and Informal Proof</em>.</li>
-    <li>Thurston, On proof and progress in mathematics</li>
-    <li>Wagner, Mathematical consensus: a research program.</li>
-    <li>Weatherall &amp; Wolfson, Correctness, artificial intelligence,
-    and the epistemic value of mathematical proof.</li>
-    </ul>
-    <h3 id="mathematical-logic-and-practice">Mathematical logic and
-    practice</h3>
-    <ul>
-    <li>Baker, <a
-    href="https://plato.stanford.edu/entries/mathematics-nondeductive/">Non-deductive
-    methods in mathematics.</a></li>
-    <li>Cheng, Mathematics, morally.</li>
-    <li>De Toffoli and Mancosu, Philosophy of mathematical
-    practice.</li>
-    <li>Hofweber, Formal tools and the philosophy of mathematics</li>
-    <li>Kreisel, Mathematical logic: what has it done for the philosophy
-    of mathematics?</li>
-    <li>Kreisel, Mathematical logic: Tool and object lesson for
-    science</li>
-    <li>Macintyre, The mathematical significance of proof theory.</li>
-    <li>Polya, <em>Mathematics and Plausible Reasoning</em></li>
-    <li>Post, Absolutely unsolvable problems and relatively undecidable
-    propositions–account of an anticipation.</li>
-    </ul>
-    <h3 id="computers-and-mathematics">Computers and mathematics</h3>
-    <ul>
-    <li>Avigad, <a href="https://arxiv.org/pdf/2502.14874">Is
-    mathematics obsolete?</a>.</li>
-    <li>Buzzard, Mathematical reasoning and the computer.</li>
-    <li>Commelin, <a
-    href="https://www.youtube.com/watch?v=KW8zEdOWxYI">Abstract
-    formalities (video)</a>.</li>
-    <li>De Millo, Lipton, and Perlis. Social processes and proofs of
-    theorems and programs.</li>
-    <li>Hales, <a href="https://arxiv.org/pdf/1302.2898">Mathematics in
-    the age of the Turing machine.</a></li>
-    <li>Hales, <a href="https://www.youtube.com/watch?v=o61dKp4rvuU">Big
-    conjectures (video).</a></li>
-    <li>Kontorovich, <a href="https://arxiv.org/pdf/2510.15924">The
-    shape of mathematics to come.</a></li>
-    <li>Macbeth, <a href="https://arxiv.org/pdf/2405.04699">Algorithm
-    and abstraction in formal mathematics</a>.</li>
-    <li>Mackenzie, <em>Mechanizing proof</em>.</li>
-    <li>Tao, <a
-    href="https://terrytao.wordpress.com/2025/12/08/the-story-of-erdos-problem-126/">The
-    story of Erdös problem 126.</a></li>
-    <li>Wayne, <a
-    href="https://buttondown.com/hillelwayne/archive/three-ways-formally-verified-code-can-go-wrong-in/">Three
-    ways formally verified code can go wrong.</a></li>
-    <li>Wu et al., Autoformalization with large language models.</li>
-    </ul>
-    <h3 id="logic-in-mathematics">Logic in mathematics</h3>
-    <ul>
-    <li>Kaye, Review of Craig Smorynski, <em>Logical Number Theory I, An
-    Introduction</em>.</li>
-    <li>Poonen, Barry Mazur’s work relating logic and arithmetic
-    geometry.</li>
-    <li>Poonen, Undecidability in number theory.</li>
-    <li>Poonen, Undecidable problems: a sampler.</li>
-    </ul>
-    <h3 id="logic-as-modeling-1">Logic as modeling</h3>
-    <ul>
-    <li>Barwise, <em>Noun Phrases, Generalized Quantifiers and
-    Anaphora</em></li>
-    <li>Cook, <em>Logic-as-modeling: a new perspective on
-    formalization</em>, PhD thesis.</li>
-    <li>Cook, Vagueness and mathematical precision.</li>
-    <li>Kripke, The question of logic.</li>
-    </ul>
-    <h3 id="intension-and-interpretation">Intension and
-    interpretation</h3>
-    <ul>
-    <li>Feferman, Arithmetization of metamathematics in a general
-    setting.</li>
-    <li>Lindstrom, <em>Aspects of incompleteness</em>.</li>
-    </ul>
-    <h3 id="natural-theories-and-linearity">Natural theories and
-    linearity</h3>
-    <ul>
-    <li>Friedman, <a
-    href="https://fomarchive.ugent.be/2000-May/003984.html">FOM: Does
-    Mathematics Need New Axioms?</a></li>
-    <li>Hamkins, <a href="https://arxiv.org/abs/2208.07445">Nonlinearity
-    and illfoundedness in the hierarchy of large cardinal consistency
-    strength</a></li>
-    <li>Walsh, <a href="https://arxiv.org/abs/2106.05794">On the
-    hierarchy of natural theories.</a></li>
-    </ul>
-  </main>
+<body class="longform">
+<h1 id="phil-2505-contentualness-formalism-spring-2026">PHIL 2505
+Contentualness &amp; Formalism (Spring 2026)</h1>
+<p><strong>Instructor:</strong> Doug Blue</p>
+<p><strong>Email:</strong> doug.blue[at]pitt.edu</p>
+<p><strong>Meetings:</strong> Tuesdays 10am-12:30pm in CL 1008B</p>
+<p><strong>Zoom link:</strong> Email me</p>
+<h2 id="description">Description</h2>
+<p>David Hilbert once described “the question of relations between
+contentualness (<em>Inhaltlichkeit</em>) and formalism in mathematics
+and logic” as among the most difficult epistemological problems with
+scientific significance. This seminar will take up that question
+directly.</p>
+<p>Our central text will be Juliette Kennedy’s <em>Gödel, Tarski and the
+Lure of Natural Language: Logical Entanglement, Formalism Freeness</em>,
+through which we will explore the epistemological advantages of
+formalization in mathematics and the phenomenon of “formalism freeness.”
+Along the way, we will consider questions such as:</p>
+<ul>
+<li>How does formalization contribute to knowledge acquisition?</li>
+<li>What is the meaning of mathematical language?</li>
+<li>What counts as a natural formal theory?</li>
+<li>To what extent are formal systems adequate models of mathematical
+practice?</li>
+</ul>
+<p>We will reflect on the broader implications of these issues for the
+philosophy of mathematical practice, traditional philosophy of
+mathematics, and linguistic philosophy, both ideal and ordinary.</p>
+<h2 id="course-structure">Course structure</h2>
+<p>The course will consist of four units.</p>
+<ol type="1">
+<li>Rigor</li>
+<li>The relation of mathematical logic to mathematics</li>
+<li>Intension and interpretation</li>
+<li>Formalism freeness</li>
+</ol>
+<h2 id="requirements">Requirements</h2>
+<p>Auditors and participants taking the course for credit may be asked
+to present material.</p>
+<p>Participants taking the course for credit are expected to write a
+term paper.</p>
+<h3 id="introduction">1/13 Introduction</h3>
+<p>Background reading:</p>
+<ul>
+<li>Burgess, <em>Rigor and Structure</em>, chapters 1 &amp; 2</li>
+<li>Avigad, Mathematics and the formal turn</li>
+</ul>
+<h3 id="proof">1/20 Proof</h3>
+<p>Reading:</p>
+<ul>
+<li>Rav, Why do we prove theorems?</li>
+<li>Azzouni, Why do informal proofs conform to formal norms?</li>
+<li>Azzouni, The derivation-indicator view of mathematical
+practice.</li>
+<li>Rav, A critique of a formalist-mechanist version of the
+justification of arguments in mathematicians’ proof practices.</li>
+</ul>
+<h3 id="proof-1">1/27 Proof</h3>
+<p>Reading:</p>
+<ul>
+<li>Tanswell, A problem with the dependence of informal proofs on formal
+proofs.</li>
+<li>Azzouni, The algorithmic-device view of informal rigorous
+mathematical proof.</li>
+</ul>
+<h3 id="virtues-of-informal-proof">2/3 Virtues of informal proof</h3>
+<p>Reading:</p>
+<ul>
+<li>Dawson, Why do mathematicians reprove theorems?</li>
+<li>Hersh, Some proposals for reviving the philosophy of
+mathematics.</li>
+<li>Jaffe and Quinn, <a
+href="https://www.ams.org/journals/bull/1993-29-01/S0273-0979-1993-00413-0/S0273-0979-1993-00413-0.pdf">“Theoretical
+mathematics”: Toward a cultural synthesis of mathematics and theoretical
+physics</a>.</li>
+<li>Thurston, On proof and progress in mathematics.</li>
+</ul>
+<h3 id="logic-and-natural-language">2/10 Logic and natural language</h3>
+<p>Reading:</p>
+<ul>
+<li>Glanzberg, <a
+href="https://michaelglanzberg.org/wp-content/uploads/2018/06/ConsequenceLanguage-29ykrxa-1.pdf">Logical
+consequence and natural language</a></li>
+<li>Glanzberg, <a
+href="https://michaelglanzberg.org/wp-content/uploads/2019/08/ModelsmodelingFinal.pdf">Models,
+model theory, and modeling</a></li>
+<li>Sagi, <a
+href="https://ee3bf591-9e37-4c8e-b89f-d8bf68bc1f92.filesusr.com/ugd/ec6525_3cc11f971ba147a39a559badb54b8567.pdf">Considerations
+on logical consequence and natural language</a></li>
+<li>Sagi, <a
+href="https://link.springer.com/article/10.1007/s11098-024-02120-y">Logicality
+in natural language</a>.</li>
+</ul>
+<h3 id="logic-as-modeling">2/17 Logic as modeling</h3>
+<p>Reading:</p>
+<ul>
+<li>Cook, <em>Logic-as-modeling: a new perspective on
+formalization</em>, PhD thesis.</li>
+<li>Cook, Vagueness and mathematical precision.</li>
+</ul>
+<h3 id="the-question-of-logic">2/24 The question of logic</h3>
+<p>Speaker: Seoyeon Park</p>
+<p>Reading:</p>
+<ul>
+<li>Kripke, The question of logic.</li>
+<li>Williamson, Accepting a logic, accepting a theory.</li>
+</ul>
+<h3 id="kreisel">3/3 Kreisel</h3>
+<p>Reading:</p>
+<ul>
+<li>Kreisel, Mathematical logic: what has it done for the philosophy of
+mathematics?</li>
+<li>Kreisel, Mathematical logic: Tool and object lesson for science</li>
+</ul>
+<h3 id="spring-break">3/10 Spring break</h3>
+<h3 id="no-meeting">3/17 No meeting</h3>
+<h3 id="informal-rigor">3/24 Informal rigor</h3>
+<p>Reading:</p>
+<ul>
+<li>Kreisel, Informal rigour and completeness proofs</li>
+<li>Kreisel, <a
+href="https://projecteuclid.org/journals/notre-dame-journal-of-formal-logic/volume-28/issue-4/Churchs-thesis-and-the-ideal-of-informal-rigour/10.1305/ndjfl/1093637646.pdf">Church’s
+thesis and the ideal of informal rigour</a></li>
+</ul>
+<p>Deep dive:</p>
+<ul>
+<li>Dean and Kurokawa, <a href="https://arxiv.org/pdf/2104.14887">On the
+methodology of informal rigour: set theory, semantics, and
+intuitionism</a></li>
+</ul>
+<h3 id="formalism-freeness">3/31 Formalism Freeness</h3>
+<ul>
+<li>Kennedy, <em>Gödel, Tarski and the Lure of Natural Language: Logical
+Entanglement, Formalism Freeness</em>, chapters 1 &amp; 2</li>
+</ul>
+<p>Recommended:</p>
+<ul>
+<li>Baldwin, <em>Model Theory and the Philosophy of Mathematical
+Practice</em>, Part I &amp; chapter 14</li>
+</ul>
+<h3 id="formalism-freeness-1">4/7 Formalism Freeness</h3>
+<p>Speakers: Stephen Perry and Philip Sink</p>
+<ul>
+<li>Kennedy, <em>Gödel, Tarski and the Lure of Natural Language: Logical
+Entanglement, Formalism Freeness</em>, chapters 3 &amp; 4</li>
+</ul>
+<h3 id="juliette-kennedy">4/14 Juliette Kennedy</h3>
+<ul>
+<li>Kennedy, <em>Gödel, Tarski and the Lure of Natural Language: Logical
+Entanglement, Formalism Freeness</em>, chapters 5-7</li>
+</ul>
+<p>Recommended:</p>
+<ul>
+<li>Baldwin, <em>Model Theory and the Philosophy of Mathematical
+Practice</em>, Part II</li>
+</ul>
+<h3 id="gil-sagi">4/21 Gil Sagi</h3>
+<p>Recommended:</p>
+<ul>
+<li>Cohnitz &amp; Nicolai, “How to adopt a logic” (dialectica 2021)</li>
+<li>Birman, “The adoption problem and the epistemology of logic” (Mind
+2024)</li>
+<li>Devitt and Roberts, “Changing our logic: a Quinean perspective”
+(Mind 2024)</li>
+<li>Besson, “Knowledge of generality and the possibility of deductive
+inference” (Inference and Consciousness, eds: Timothy Chan and Anders
+Nes, 2019).</li>
+</ul>
+<p>Gil solved philosophy. It was <em>crazy</em>.</p>
+<h1 id="references">References</h1>
+<p>Unfinished.</p>
+<h3 id="books">Books</h3>
+<ul>
+<li>Baldwin, <em>Model Theory and the Philosophy of Mathematical
+Practice</em>.</li>
+<li>Burgess, <a
+href="https://www.princeton.edu/~jburgess/Rigor&amp;Structure.pdf"><em>Rigor
+and Structure</em>.</a></li>
+<li>Kennedy, <em>Gödel, Tarski and the Lure of Natural Language: Logical
+Entanglement, Formalism Freeness</em>.</li>
+<li>Rorty (editor), <em>The Linguistic Turn: Essays in Philosophical
+Method</em>.</li>
+</ul>
+<h3 id="hilbert-and-the-contentual">Hilbert and the contentual</h3>
+<ul>
+<li>Blanchette, <a
+href="https://plato.stanford.edu/entries/frege-hilbert/">The
+Frege-Hilbert controversy.</a></li>
+<li>Hilbert, On the infinite.</li>
+<li>Hilbert, Axiomatic thinking.</li>
+<li>Mancosu, <em>From Brouwer to Hilbert. The Debate on the Foundations
+of Mathematics in the 1920s</em>.</li>
+</ul>
+<h3 id="rigor">Rigor</h3>
+<ul>
+<li>Avigad, Understanding proofs.</li>
+<li>Avigad, Understanding, formal verification, and the philosophy of
+mathematics.</li>
+<li>Avigad, The mechanization of mathematics.</li>
+<li>Avigad, <a
+href="https://philsci-archive.pitt.edu/16283/1/reliability.pdf">Relibability
+of mathematical inference.</a></li>
+<li>Avigad, <a href="https://arxiv.org/pdf/2311.00007">Mathematics and
+the formal turn</a>.</li>
+<li>Azzouni, How and why mathematics is unique as social practice.</li>
+<li>Azzouni, Why do informal proofs conform to formal norms?</li>
+<li>Azzouni, Does reason evolve? (Does the reasoning in mathematics
+evolve?)</li>
+<li>Azzouni, The algorithmic-device view of informal rigorous
+mathematical proof.</li>
+<li>Burgess &amp; De Toffoli, What is mathematical rigor?</li>
+<li>De Toffoli, Reconciling rigor and intuition.</li>
+<li>De Toffoli, Proofs for a price: Tomorrow’s ultra-rigorous
+mathematical culture.</li>
+<li>Feferman, And so on…: Reasoning with infinite diagrams.</li>
+<li>Granville, Proof in the time of machine.</li>
+<li>Hamami, Mathematical rigor and proof.</li>
+<li>Harris, <a
+href="https://www.ams.org/journals/bull/2024-61-02/S0273-0979-2024-01825-4/S0273-0979-2024-01825-4.pdf">Automation
+compels mathematicians to reflect on our values</a>.</li>
+<li>Larvor, How to think about informal proofs.</li>
+<li>Larvor, Why the naive derivation recipe model cannot explain how
+mathematicians’ proofs secure mathematical knowledge.</li>
+<li>Paseau, What’s the point of complete rigour?</li>
+<li>Pelc, <a href="https://arxiv.org/pdf/1411.4857">Why do we believe
+theorems?</a></li>
+<li>Rav, Why do we prove theorems?</li>
+<li>Rav, A critique of a formalist-mechanist version of the
+justification of arguments in mathematicians’ proof practices.</li>
+<li>Tanswell, A problem with the dependence of informal proofs on formal
+proofs.</li>
+<li>Tanswell, <em>Mathematical Rigour and Informal Proof</em>.</li>
+<li>Thurston, On proof and progress in mathematics</li>
+<li>Wagner, Mathematical consensus: a research program.</li>
+<li>Weatherall &amp; Wolfson, Correctness, artificial intelligence, and
+the epistemic value of mathematical proof.</li>
+</ul>
+<h3 id="mathematical-logic-and-practice">Mathematical logic and
+practice</h3>
+<ul>
+<li>Baker, <a
+href="https://plato.stanford.edu/entries/mathematics-nondeductive/">Non-deductive
+methods in mathematics.</a></li>
+<li>Cheng, Mathematics, morally.</li>
+<li>De Toffoli and Mancosu, Philosophy of mathematical practice.</li>
+<li>Hofweber, Formal tools and the philosophy of mathematics</li>
+<li>Kreisel, Mathematical logic: what has it done for the philosophy of
+mathematics?</li>
+<li>Kreisel, Mathematical logic: Tool and object lesson for science</li>
+<li>Macintyre, The mathematical significance of proof theory.</li>
+<li>Polya, <em>Mathematics and Plausible Reasoning</em></li>
+<li>Post, Absolutely unsolvable problems and relatively undecidable
+propositions–account of an anticipation.</li>
+</ul>
+<h3 id="computers-and-mathematics">Computers and mathematics</h3>
+<ul>
+<li>Avigad, <a href="https://arxiv.org/pdf/2502.14874">Is mathematics
+obsolete?</a>.</li>
+<li>Buzzard, Mathematical reasoning and the computer.</li>
+<li>Commelin, <a
+href="https://www.youtube.com/watch?v=KW8zEdOWxYI">Abstract formalities
+(video)</a>.</li>
+<li>De Millo, Lipton, and Perlis. Social processes and proofs of
+theorems and programs.</li>
+<li>Hales, <a href="https://arxiv.org/pdf/1302.2898">Mathematics in the
+age of the Turing machine.</a></li>
+<li>Hales, <a href="https://www.youtube.com/watch?v=o61dKp4rvuU">Big
+conjectures (video).</a></li>
+<li>Kontorovich, <a href="https://arxiv.org/pdf/2510.15924">The shape of
+mathematics to come.</a></li>
+<li>Macbeth, <a href="https://arxiv.org/pdf/2405.04699">Algorithm and
+abstraction in formal mathematics</a>.</li>
+<li>Mackenzie, <em>Mechanizing proof</em>.</li>
+<li>Tao, <a
+href="https://terrytao.wordpress.com/2025/12/08/the-story-of-erdos-problem-126/">The
+story of Erdös problem 126.</a></li>
+<li>Wayne, <a
+href="https://buttondown.com/hillelwayne/archive/three-ways-formally-verified-code-can-go-wrong-in/">Three
+ways formally verified code can go wrong.</a></li>
+<li>Wu et al., Autoformalization with large language models.</li>
+</ul>
+<h3 id="logic-in-mathematics">Logic in mathematics</h3>
+<ul>
+<li>Kaye, Review of Craig Smorynski, <em>Logical Number Theory I, An
+Introduction</em>.</li>
+<li>Poonen, Barry Mazur’s work relating logic and arithmetic
+geometry.</li>
+<li>Poonen, Undecidability in number theory.</li>
+<li>Poonen, Undecidable problems: a sampler.</li>
+</ul>
+<h3 id="logic-as-modeling-1">Logic as modeling</h3>
+<ul>
+<li>Barwise, <em>Noun Phrases, Generalized Quantifiers and
+Anaphora</em></li>
+<li>Cook, <em>Logic-as-modeling: a new perspective on
+formalization</em>, PhD thesis.</li>
+<li>Cook, Vagueness and mathematical precision.</li>
+<li>Kripke, The question of logic.</li>
+</ul>
+<h3 id="intension-and-interpretation">Intension and interpretation</h3>
+<ul>
+<li>Feferman, Arithmetization of metamathematics in a general
+setting.</li>
+<li>Lindstrom, <em>Aspects of incompleteness</em>.</li>
+</ul>
+<h3 id="natural-theories-and-linearity">Natural theories and
+linearity</h3>
+<ul>
+<li>Friedman, <a
+href="https://fomarchive.ugent.be/2000-May/003984.html">FOM: Does
+Mathematics Need New Axioms?</a></li>
+<li>Hamkins, <a href="https://arxiv.org/abs/2208.07445">Nonlinearity and
+illfoundedness in the hierarchy of large cardinal consistency
+strength</a></li>
+<li>Walsh, <a href="https://arxiv.org/abs/2106.05794">On the hierarchy
+of natural theories.</a></li>
+</ul>
 </body>
 </html>

@@ -8,7 +8,7 @@
 **Zoom link:** Email me
 
 
-###Description
+## Description
 David Hilbert once described "the question of relations between contentualness (_Inhaltlichkeit_) and formalism in mathematics and logic" as among the most difficult epistemological problems with scientific significance. This seminar will take up that question directly.
 
 Our central text will be Juliette Kennedy’s _Gödel, Tarski and the Lure of Natural Language: Logical Entanglement, Formalism Freeness_, through which we will explore the epistemological advantages of formalization in mathematics and the phenomenon of "formalism freeness." Along the way, we will consider questions such as: 
@@ -21,7 +21,7 @@ Our central text will be Juliette Kennedy’s _Gödel, Tarski and the Lure of Na
 We will reflect on the broader implications of these issues for the philosophy of mathematical practice, traditional philosophy of mathematics, and linguistic philosophy, both ideal and ordinary.
 
 
-### Course structure
+## Course structure
 
 The course will consist of four units.
 
@@ -32,7 +32,7 @@ The course will consist of four units.
 
 
 
-### Requirements
+## Requirements
 Auditors and participants taking the course for credit may be asked to present material.
 
 Participants taking the course for credit are expected to write a term paper.
